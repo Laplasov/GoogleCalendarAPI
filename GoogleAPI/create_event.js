@@ -14,11 +14,11 @@ const calendar = google.calendar({ version: 'v3', auth });
 const event = {
     summary: 'Test API Event',
     start: {
-      dateTime: '2023-03-12T00:00:00-07:00',
+      dateTime: '2023-03-15T10:00:00+03:00',
       timeZone: 'America/Los_Angeles',
     },
     end: {
-      dateTime: '2023-03-12T17:05:00-06:00',
+      dateTime: '2023-03-15T12:05:00+03:00',
       timeZone: 'America/Los_Angeles',
     },
     location: 'San Francisco',
@@ -29,7 +29,7 @@ const event = {
   };
   
   calendar.events.insert({
-    calendarId: 'user@example.com',
+    calendarId: 'joncontactmail@gmail.com',
     resource: event,
   }, (err, res) => {
     if (err) {
